@@ -87,7 +87,8 @@ go test bosh-cli-completion/cmd/completion
 
 ```shell
 export BBC_VER="v0.0.1-beta-1"
-
+```
+```shell
 GOOS=linux GOARCH=amd64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH"
 GOOS=linux GOARCH=arm64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH"
 
@@ -97,6 +98,19 @@ GOOS=darwin GOARCH=arm64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARC
 GOOS=windows GOARCH=amd64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH"
 GOOS=windows GOARCH=arm64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH"
 ```
+
+Use these commands for building a standalone, statically-linked binary using an external linker:
+```shell
+GOOS=linux GOARCH=amd64; go build -ldflags '-linkmode external -extldflags "-static"' -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH-standalone"
+GOOS=linux GOARCH=arm64; go build -ldflags '-linkmode external -extldflags "-static"' -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH-standalone"
+
+GOOS=darwin GOARCH=amd64; go build -ldflags '-linkmode external -extldflags "-static"' -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH-standalone"
+GOOS=darwin GOARCH=arm64; go build -ldflags '-linkmode external -extldflags "-static"' -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH-standalone"
+
+GOOS=windows GOARCH=amd64; go build -ldflags '-linkmode external -extldflags "-static"' -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH-standalone"
+GOOS=windows GOARCH=arm64; go build -ldflags '-linkmode external -extldflags "-static"' -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH-standalone"
+```
+
 
 ### Debug
 
