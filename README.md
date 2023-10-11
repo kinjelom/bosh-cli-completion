@@ -86,7 +86,16 @@ go test bosh-cli-completion/cmd/completion
 ### Build
 
 ```shell
-GOOS=linux GOARCH=amd64 go build
+export BBC_VER="v0.0.1-beta-1"
+
+GOOS=linux GOARCH=amd64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH"
+GOOS=linux GOARCH=arm64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH"
+
+GOOS=darwin GOARCH=amd64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH"
+GOOS=darwin GOARCH=arm64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH"
+
+GOOS=windows GOARCH=amd64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH"
+GOOS=windows GOARCH=arm64; go build -o "bosh-cli-completion-$BBC_VER-$GOOS-$GOARCH"
 ```
 
 ### Debug
