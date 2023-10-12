@@ -2,16 +2,9 @@
 
 Automatically generated shell autocomplete for [bosh-cli](https://github.com/cloudfoundry/bosh-cli) (bash, zsh, fish, powershell)
 
-- Used the Cobra for implementing the "completion" and "__complete" commands
-- Minimal impact on the existing code
-- Initializing the Cobra command tree using reflection
-- Suggesting values for commands: curl.
-- Suggesting values using the Director API queries and caching the results on bosh-cli disk
-
-- completely compatible with bosh-li (uses env and flags just like the bosh-cli),
-- always up-to-date (detects commands through reflection),
-- provides names of deployments and all others using the cache (requesting the bosh director API takes a while and the result does not change so quickly)
-- uses [Cobra](https://github.com/spf13/cobra/) to autocomplete
+- Uses [Cobra](https://github.com/spf13/cobra/) to autocomplete, the Cobra command tree loaded from bosh-cli using reflection
+- Session compatible with bosh-li (uses env and flags just like the bosh-cli),
+- Suggesting names of deployments and all others using the cache (requesting the Bosh Director API takes a while and the result does not change so quickly)
 
 > Cobra https://github.com/spf13/cobra/
 > Cobra is used in many Go projects such as Kubernetes, Hugo, and GitHub CLI to name a few. This list contains a more extensive list of projects using Cobra.
