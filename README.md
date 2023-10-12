@@ -1,6 +1,6 @@
 # bosh-cli-completion
 
-"Automatically generated shell autocomplete for [bosh-cli](https://github.com/cloudfoundry/bosh-cli) (bash, zsh, fish, powershell):
+Automatically generated shell autocomplete for [bosh-cli](https://github.com/cloudfoundry/bosh-cli) (bash, zsh, fish, powershell):
 
 - Utilizes [Cobra](https://github.com/spf13/cobra/) for autocompletion, loading the Cobra command tree from bosh-cli via reflection.
 - Session is compatible with bosh-cli (it uses environment variables and flags in the same manner as bosh-cli).
