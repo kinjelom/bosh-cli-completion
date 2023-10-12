@@ -2,12 +2,11 @@
 
 Automatically generated shell autocomplete for [bosh-cli](https://github.com/cloudfoundry/bosh-cli) (bash, zsh, fish, powershell):
 
-- Utilizes [Cobra](https://github.com/spf13/cobra/) for autocompletion, loading the Cobra command tree from bosh-cli via reflection.
-- Session is compatible with bosh-cli (it uses environment variables and flags in the same manner as bosh-cli).
-- Offers cacheable suggestions for deployment names and other parameters, as querying the Bosh Director API can be time-consuming and the results don't update frequently.
+- Utilizes [Cobra](https://github.com/spf13/cobra/) for autocompletion, loading the Cobra command tree from `bosh-cli` via reflection.
+- Session is compatible with `bosh-cli` (it uses environment variables and flags in the same manner as `bosh-cli`).
+- Offers **cacheable suggestions** for deployment names and other parameters, as querying the `Bosh Director API` can be time-consuming and the results don't update frequently.
 
-> Cobra https://github.com/spf13/cobra/
-> Cobra is used in many Go projects such as Kubernetes, Hugo, and GitHub CLI to name a few. This list contains a more extensive list of projects using Cobra.
+> [Cobra](https://github.com/spf13/cobra/) is used in many Go projects such as Kubernetes, Hugo, and GitHub CLI to name a few. This list contains a more extensive list of projects using Cobra.
 
 Check out this solution and consider voting for it to be [merged into the main bosh-cli repo](https://github.com/cloudfoundry/bosh-cli/pull/629)
 
