@@ -39,9 +39,9 @@ Check out this solution and consider voting for it to be [merged into the main b
 4. For example
    ```shell
    b -d cf ssh <TAB>
-   api                                                          log-api
-   api/eb477fea-77dd-4833-bb62-e9025595f020                     log-api/22074b77-5a65-47c4-add5-fab4f8165b2c
-   api/c03f3d40-e878-42d4-85d7-1aeeac2bc96a                     log-api/1b7b4364-0cb5-48b0-bb76-9f96ace90d28
+   api                                       log-api
+   api/eb477fea-77dd-4833-bb62-e9025595f020  log-api/22074b77-5a65-47c4-add5-fab4f8165b2c
+   api/c03f3d40-e878-42d4-85d7-1aeeac2bc96a  log-api/1b7b4364-0cb5-48b0-bb76-9f96ace90d28
    ...
 
 ### Other Shells
