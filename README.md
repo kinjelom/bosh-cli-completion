@@ -36,7 +36,7 @@ Check out this solution and consider voting for it to be [merged into the main b
 1. Type `bosh -d ` and `TAB key`
 2. Wait a moment to give time to query the Bosh Director API, the response will be cached for 15s. 
 3. Type `TAB key` again.
-4. For example
+4. For example:
    ```shell
    b -d cf ssh <TAB>
    api                                       log-api
